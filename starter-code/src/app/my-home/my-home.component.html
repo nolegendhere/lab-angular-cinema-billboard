@@ -1,0 +1,11 @@
+<table>
+  <tr>
+    <th> Room</th>
+    <th> Name </th>
+    <th colspan="2"> Details </th>
+  </tr>
+  <tr *ngFor="let movie of moviesList">
+    <td> {{ movie.room }} </td>
+    <td><a [routerLink]="['/movie',movie.id]"> {{ movie.name }} </a>  </td>
+  </tr>
+</table>
