@@ -1,0 +1,50 @@
+/*MovieProfile*/
+/*MovieProfile*/
+
+li{
+  list-style: none;
+}
+
+.movie-title{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.movie-title h3{
+  margin-right: 5vw;
+}
+
+.movie-profile{
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.movie-poster{
+  max-width: 50vw;
+  max-height: 50vw;
+  margin-right: 1rem;
+}
+
+.movie-genres{
+  display: flex;
+  flex-flow: row;
+}
+
+.movie-actors{
+  display: flex;
+  flex-flow: row;
+}
+
+.movie-synopsis{
+  width: 20vw;
+}
+
+.movie-description{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1rem;
+}

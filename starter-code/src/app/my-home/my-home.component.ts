@@ -12,23 +12,10 @@ export class MyHomeComponent implements OnInit {
   moviesList: Array<any> = []
   constructor(private movies: CinemaService) {
     this.moviesList=this.movies.getMovies();
+    console.log(this.moviesList[0].title);
   }
 
   ngOnInit() {
   }
 
 }
-
-
-// Create two components:
-// MyHomeComponent
-// MyMovieComponent
-// Create the different routes to show each component:
-// /home, to show MyHomeComponent
-// /movie/:id, to show MyMovieComponent
-// Add <router-outlet></router-outlet> tag to app.component.html file
-////////////////////////////////////
-// Load the movies from the Cinema service, with the getMovies() method we've previously defined.
-// Display the movies on the /home page.
-// Create a link for each movie that directs the user to /movie/:id.
-// Style the page.

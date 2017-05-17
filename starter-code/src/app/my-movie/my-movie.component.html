@@ -1,6 +1,29 @@
-<h3>
- This is the page for the movie: {{ movieId }}
-</h3>
-<p>{{movie.name}}</p>
-<p>{{movie.room}}</p>
+<div class="movie-title">
+  <h3>Room {{movie.id}}</h3>
+  <h2>{{movie.title}}</h2>
+</div>
+<div class="movie-profile">
+  <img class="movie-poster" [src]="movie.poster"/>
+  <div class="movie-description">
+    <div class="movie-genres">
+      <p>Genre</p>
+      <ul>
+        <li *ngFor="let genre of movie.genres">
+          <p>{{genre}}</p>
+        </li>
+      </ul>
+    </div>
+    <p>{{movie.year}}</p>
+    <p>{{movie.director}}</p>
+    <div class="movie-actors">
+      <p>Actores</p>
+      <ul>
+        <li *ngFor="let actor of movie.actors">
+          <p>{{actor}}</p>
+        </li>
+      </ul>
+    </div>
+    <p class="movie-synopsis">{{movie.synopsis}}</p>
+  </div>
+</div>
 <button (click)="goHome()"> Go Home  </button>
